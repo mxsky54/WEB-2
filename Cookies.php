@@ -21,7 +21,7 @@ if(isset($_POST['submit']))
 		setcookie("connexion",1);
 		$_COOKIE["connexion"]=1;
 		
-		echo 'Bonjour '.$_COOKIE["nom"].' ,je suis ravi de faire votre connaissance !!';
+		echo 'Bonjour '.$_COOKIE["nom"].' ,je suis ravi de faire votre connaissance !!'; //Les messages ne doivent pas etre affichés ici mais dans le main avec un switch en fonction de la nb connection
 	}
 	else if($_COOKIE["connexion"]>0 && $_COOKIE["connexion"]<6)
 	{
